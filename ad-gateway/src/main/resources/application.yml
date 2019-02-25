@@ -9,3 +9,12 @@ eureka:
     register-with-eureka: true
     service-url:
       defaultZone: http://localhost:8000/eureka/
+zuul:
+  prefix: /sunny
+  routes:
+  #投放系统注册到网关
+    sponsor:
+      path: /ad-sponsor/**
+      serviceId: eureka-client-ad-sponsor
+      strip-prefix: false #不跳过前缀
+
