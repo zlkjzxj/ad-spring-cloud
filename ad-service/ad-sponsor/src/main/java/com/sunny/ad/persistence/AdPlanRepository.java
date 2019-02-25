@@ -1,23 +1,20 @@
 package com.sunny.ad.persistence;
 
 import com.sunny.ad.entity.AdPlan;
-import com.sunny.ad.entity.AdUser;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 
 /**
- * @Description TODO
- * @Author sunny
- * Date 2019\2\20 0020 16:16
+ * Created by Qinyi.
  */
 public interface AdPlanRepository extends JpaRepository<AdPlan, Long> {
 
-    AdPlan findAdUserByIdAndUserId(Long id, Long userId);
+    AdPlan findByIdAndUserId(Long id, Long userId);
 
-    List<AdPlan> findAllByIdAndUserId(List<Long> ids, Long UserId);
+    List<AdPlan> findAllByIdInAndUserId(List<Long> ids, Long userId);
 
-    AdPlan findAllByUserIdAndPlanName(Long userId, String planName);
+    AdPlan findByUserIdAndPlanName(Long userId, String planName);
 
     List<AdPlan> findAllByPlanStatus(Integer status);
 }

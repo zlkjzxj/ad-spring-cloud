@@ -2,17 +2,24 @@ package com.sunny.ad.constant;
 
 import lombok.Getter;
 
+/**
+ * Created by Qinyi.
+ */
 @Getter
 public enum CreativeMetrialType {
+
     JPG(1, "jpg"),
     BMP(2, "bmp"),
+
     MP4(3, "mp4"),
     AVI(4, "avi"),
-    TEXT(5, "text");
-    private Integer type;
+
+    TXT(5, "txt");
+
+    private int type;
     private String desc;
 
-    CreativeMetrialType(Integer type, String desc) {
+    CreativeMetrialType(int type, String desc) {
         this.type = type;
         this.desc = desc;
     }

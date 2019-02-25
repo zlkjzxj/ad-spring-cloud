@@ -3,14 +3,14 @@ package com.sunny.ad.constant;
 import lombok.Getter;
 
 /**
- * @Description TODO
- * @Author sunny
- * Date 2019\2\20 0020 15:12
+ * Created by Qinyi.
  */
 @Getter
 public enum CommonStatus {
+
     VALID(1, "有效状态"),
     INVALID(0, "无效状态");
+
     private Integer status;
     private String desc;
 

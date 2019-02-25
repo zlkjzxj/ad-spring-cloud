@@ -4,10 +4,12 @@ import com.sunny.ad.entity.AdUser;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
- * @Description TODO
- * @Author sunny
- * Date 2019\2\20 0020 16:16
+ * Created by Qinyi.
  */
 public interface AdUserRepository extends JpaRepository<AdUser, Long> {
-    AdUser findAdUserByUsername(String userNme);
+
+    /**
+     * <h2>根据用户名查找用户记录</h2>
+     * */
+    AdUser findByUsername(String username);
 }
