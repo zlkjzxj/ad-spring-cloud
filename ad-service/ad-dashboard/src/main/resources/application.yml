@@ -1,0 +1,19 @@
+server:
+  port: 7002
+  servlet:
+    context-path: /ad-dashboard
+
+spring:
+  application:
+    name: ad-dashboard
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:server1:8000/eureka/
+
+#服务暴露，开启监控信息
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
