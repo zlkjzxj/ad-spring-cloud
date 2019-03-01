@@ -16,6 +16,7 @@
         <module>ad-gateway</module>
         <module>ad-service</module>
         <module>ad-service</module>
+        <module>kafka-study</module>
     </modules>
 
     <name>ad-spring-cloud</name>

@@ -7,14 +7,13 @@ import lombok.NoArgsConstructor;
 import java.util.Date;
 
 /**
- * Created by walle
- * 2019/2/23 16:28
- * good good study,day day up!
+ * Created by Qinyi.
  */
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 public class AdPlan {
+
     private Long id;
     private Long userId;
     private String planName;

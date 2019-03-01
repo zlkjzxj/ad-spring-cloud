@@ -16,7 +16,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/sunny_ad?autoReconnect=true
     username: root
-    password: Perfectisshit
+    password: root
     tomcat:
       max-active: 4
       min-idle: 2 #最小空闲
